@@ -73,7 +73,7 @@ nav .nav-container .right-nav {
   text-align: left;
 }
 
-.background {
+.home .background {
   position: absolute;
   width: 100%;
   z-index: -1;
@@ -81,11 +81,11 @@ nav .nav-container .right-nav {
   padding-bottom: 40rem;
 }
 
-.background #hero-background-graphics {
+.home .background #hero-background-graphics {
   width: 104%;
 }
 
-.background #hero-side-graphics {
+.home .background #hero-side-graphics {
   position: absolute;
   top: 12%;
   right: -5%;
@@ -179,5 +179,107 @@ nav .nav-container .right-nav {
   left: 48%;
   z-index: 50;
   width: 20%;
+}
+
+.surprises {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 18rem;
+  position: relative;
+}
+
+.surprises .left-section {
+  text-align: right;
+  width: 50%;
+}
+
+.surprises .left-section img {
+  -webkit-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.09);
+  width: 45%;
+  opacity: 0.8;
+  margin-right: 15%;
+}
+
+.surprises .right-section {
+  width: 50%;
+  padding-right: 18%;
+}
+
+.surprises .right-section h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #494949;
+}
+
+.surprises .right-section h2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #494949;
+  line-height: 2.4rem;
+}
+
+.surprises .right-section span {
+  color: #f8835e;
+}
+
+.surprises .background-text {
+  position: absolute;
+  top: 21rem;
+  left: 10rem;
+}
+
+.surprises .background-text h1 {
+  font-size: 4rem;
+  opacity: 0.05;
+  font-weight: 500;
+  letter-spacing: 1rem;
+  z-index: -1;
+}
+
+.how-we-work {
+  margin-top: 14rem;
+  padding: 0 10%;
+  position: relative;
+}
+
+.how-we-work h1 {
+  font-size: 3rem;
+  color: #f8835e;
+}
+
+.how-we-work .process-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 3rem;
+}
+
+.how-we-work .process-container .step {
+  width: 33.33%;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.how-we-work .process-container .step .text h3 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #494949;
+}
+
+.how-we-work .background {
+  position: absolute;
+  top: -7rem;
+  z-index: -10;
+  width: 120%;
+  -webkit-transform: translateX(-15rem);
+          transform: translateX(-15rem);
+}
+
+.how-we-work .background img {
+  width: 100%;
 }
 /*# sourceMappingURL=styles.css.map */

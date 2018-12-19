@@ -71,19 +71,20 @@ nav
         .right-nav
             text-align: left
 
-.background
-    position: absolute
-    width: 100%
-    z-index: -1
-    overflow-x: hidden
-    padding-bottom: 40rem
-    #hero-background-graphics
-        width: 104%
-    #hero-side-graphics
+.home
+    .background
         position: absolute
-        top: 12%
-        right: -5%
-        width: 30% 
+        width: 100%
+        z-index: -1
+        overflow-x: hidden
+        padding-bottom: 40rem
+        #hero-background-graphics
+            width: 104%
+        #hero-side-graphics
+            position: absolute
+            top: 12%
+            right: -5%
+            width: 30% 
 
 .hero
     display: flex
@@ -142,5 +143,77 @@ nav
             left: 48%
             z-index: 50
             width: 20%
+
+.surprises
+    display: flex
+    margin-top: 18rem
+    position: relative
+    .left-section
+        text-align: right
+        width: 50%
+        img
+            @include shadow1
+            width: 45%
+            opacity: 0.8
+            margin-right: 15%
+    .right-section
+        width: 50%
+        padding-right: 18%
+        h1
+            font-size: 2rem
+            font-weight: 400
+            color: $black
+        h2
+            font-size: 1.4rem
+            font-weight: 500
+            color: $black
+            line-height: 2.4rem
+        span
+            color: $orange
+    .background-text
+        position: absolute
+        top: 21rem
+        left: 10rem
+        h1
+            font-size: 4rem
+            opacity: 0.05
+            font-weight: 500
+            letter-spacing: 1rem
+            z-index: -1
+
+.how-we-work
+    margin-top: 14rem
+    padding: 0 10%
+    position: relative
+    h1
+        font-size: 3rem
+        color: $orange  
+    .process-container
+        display: flex
+        flex-wrap: wrap
+        padding-top: 3rem
+        .step
+            width: 33.33%
+            padding: 2rem
+            margin-bottom: 2rem               
+            .text
+                h3
+                    font-size: 1.4rem
+                    font-weight: 400
+                    color: $black
+    .background
+        position: absolute
+        top: -7rem
+        z-index: -10
+        width: 120%
+        transform: translateX(-15rem)
+        img
+            width: 100%
+
+                
+
+
+
+
         
     
