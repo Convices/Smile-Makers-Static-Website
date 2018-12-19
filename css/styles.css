@@ -181,6 +181,7 @@ nav .nav-container .right-nav {
   width: 20%;
 }
 
+/* ---------------------------------------------- Surprises ------------------------------------------------- */
 .surprises {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -238,6 +239,7 @@ nav .nav-container .right-nav {
   z-index: -1;
 }
 
+/* ---------------------------------------------- How we work ------------------------------------------------- */
 .how-we-work {
   margin-top: 14rem;
   padding: 0 10%;
@@ -261,7 +263,6 @@ nav .nav-container .right-nav {
 .how-we-work .process-container .step {
   width: 33.33%;
   padding: 2rem;
-  margin-bottom: 2rem;
 }
 
 .how-we-work .process-container .step .text h3 {
@@ -281,5 +282,263 @@ nav .nav-container .right-nav {
 
 .how-we-work .background img {
   width: 100%;
+}
+
+/* ---------------------------------------------- Volunteer ------------------------------------------------- */
+.volunteer {
+  margin-top: 14rem;
+}
+
+.volunteer h1 {
+  font-size: 3rem;
+  color: #737373;
+  text-align: center;
+}
+
+.volunteer #volunteer-form label, .volunteer #volunteer-form input, .volunteer #volunteer-form textarea {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.volunteer #volunteer-form label {
+  font-size: 1.2rem;
+  color: #494949;
+  margin-bottom: 0.5rem;
+}
+
+.volunteer #volunteer-form input, .volunteer #volunteer-form textarea {
+  border: none;
+  background: #fff6e7;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.volunteer #volunteer-form button {
+  border: none;
+  background: #ffad7a;
+  background: -webkit-gradient(left top, right top, color-stop(0%, #ffad7a), color-stop(100%, #fedd8f));
+  background: -webkit-gradient(linear, left top, right top, from(#ffad7a), to(#fedd8f));
+  background: linear-gradient(to right, #ffad7a 0%, #fedd8f 100%);
+  -webkit-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.09);
+  color: white;
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+  margin-top: 1rem;
+}
+
+.volunteer #volunteer-form button:hover {
+  background: #ffad7a;
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
+/* ---------------------------------------------- Events ------------------------------------------------- */
+.events {
+  margin-top: 14rem;
+  padding: 0 20%;
+  position: relative;
+}
+
+.events h1 {
+  font-size: 3rem;
+  color: #f8835e;
+  text-align: right;
+}
+
+.events .left-section img {
+  width: 100%;
+}
+
+.events .right-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.events .right-section img {
+  width: 49%;
+  margin: 0.7rem 0;
+}
+
+.events .background {
+  position: absolute;
+  z-index: -10;
+  top: 0;
+  width: 100%;
+  -webkit-transform: translateX(-25rem);
+          transform: translateX(-25rem);
+}
+
+.events .background img {
+  width: 120%;
+}
+
+/* ---------------------------------------------- Testimonials ------------------------------------------------- */
+.testimonials {
+  padding: 0 25%;
+  position: relative;
+  margin-top: 10rem;
+}
+
+.testimonials .card-wrapper {
+  position: relative;
+}
+
+.testimonials .card-wrapper .card {
+  background: white;
+  -webkit-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.09);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.testimonials .card-wrapper .card .pic {
+  width: 20%;
+  text-align: center;
+}
+
+.testimonials .card-wrapper .card .pic .round {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #fabd9a;
+  display: block;
+  margin: 0 auto;
+}
+
+.testimonials .card-wrapper .card .pic .round.pink {
+  background: #f6aecd;
+}
+
+.testimonials .card-wrapper .card .pic h4 {
+  font-weight: 500;
+  color: #494949;
+}
+
+.testimonials .card-wrapper .card .text {
+  width: 80%;
+  font-size: 1.2rem;
+  color: #494949;
+}
+
+.testimonials .card-wrapper .background img {
+  position: absolute;
+  z-index: -10;
+}
+
+.testimonials .card-wrapper .background img.start-quote {
+  top: -5rem;
+  left: -5rem;
+}
+
+.testimonials .card-wrapper .background img.end-quote {
+  bottom: -5rem;
+  right: -5rem;
+}
+
+/* ---------------------------------------------- Register ------------------------------------------------- */
+.register {
+  margin-top: 14rem;
+  padding: 2% 20%;
+  background: #fed98e;
+}
+
+.register h1 {
+  font-size: 3rem;
+  color: #f8835e;
+}
+
+.register #registration-form label, .register #registration-form input, .register #registration-form textarea {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.register #registration-form label {
+  font-size: 1.2rem;
+  color: #494949;
+  margin-bottom: 0.5rem;
+}
+
+.register #registration-form input, .register #registration-form textarea {
+  border: none;
+  background: #fff6e7;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.register #registration-form button {
+  border: none;
+  background: #fea35d;
+  background: -webkit-gradient(left top, right top, color-stop(0%, #fea35d), color-stop(100%, #f6785c));
+  background: -webkit-gradient(linear, left top, right top, from(#fea35d), to(#f6785c));
+  background: linear-gradient(to right, #fea35d 0%, #f6785c 100%);
+  -webkit-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.09);
+  color: white;
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+  margin-top: 1rem;
+}
+
+.register #registration-form button:hover {
+  background: #ffad7a;
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
+/* ---------------------------------------------- Media queries ------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------- */
+@media (max-width: 1373px) {
+  .hero .hero-content h1 {
+    font-size: 4rem;
+  }
+  .hero .hero-content h2 {
+    font-size: 1.7rem;
+  }
+  .hero .hero-content .register-btn {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 1262px) {
+  nav .nav-container .left-nav a, nav .nav-container .right-nav a {
+    padding: 1rem;
+  }
+  .hero .hero-content h1 {
+    font-size: 3rem;
+  }
+  .hero .hero-content h2 {
+    font-size: 1.4rem;
+  }
+  .hero .hero-content .register-btn {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

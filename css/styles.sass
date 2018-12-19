@@ -2,6 +2,8 @@
 
 $black: #494949
 $orange: #f8835e
+$lightyellow: #fff6e7
+$yellow: #fed98e
 
 
 /* ---------------------------------------------- Global ------------------------------------------------- */
@@ -28,6 +30,15 @@ body
     background: -o-linear-gradient(left, rgba(254,163,93,1) 0%, rgba(246,120,92,1) 100%)
     background: -ms-linear-gradient(left, rgba(254,163,93,1) 0%, rgba(246,120,92,1) 100%)
     background: linear-gradient(to right, rgba(254,163,93,1) 0%, rgba(246,120,92,1) 100%)
+
+@mixin yellowOrangeGradient()
+    background: rgba(255,173,122,1)
+    background: -moz-linear-gradient(left, rgba(255,173,122,1) 0%, rgba(254,221,143,1) 100%)
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,173,122,1)), color-stop(100%, rgba(254,221,143,1)))
+    background: -webkit-linear-gradient(left, rgba(255,173,122,1) 0%, rgba(254,221,143,1) 100%)
+    background: -o-linear-gradient(left, rgba(255,173,122,1) 0%, rgba(254,221,143,1) 100%)
+    background: -ms-linear-gradient(left, rgba(255,173,122,1) 0%, rgba(254,221,143,1) 100%)
+    background: linear-gradient(to right, rgba(255,173,122,1) 0%, rgba(254,221,143,1) 100%)
 
 @mixin shadow1()
     -webkit-box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.09)
@@ -144,6 +155,8 @@ nav
             z-index: 50
             width: 20%
 
+/* ---------------------------------------------- Surprises ------------------------------------------------- */
+
 .surprises
     display: flex
     margin-top: 18rem
@@ -181,6 +194,8 @@ nav
             letter-spacing: 1rem
             z-index: -1
 
+/* ---------------------------------------------- How we work ------------------------------------------------- */
+
 .how-we-work
     margin-top: 14rem
     padding: 0 10%
@@ -194,8 +209,7 @@ nav
         padding-top: 3rem
         .step
             width: 33.33%
-            padding: 2rem
-            margin-bottom: 2rem               
+            padding: 2rem              
             .text
                 h3
                     font-size: 1.4rem
@@ -209,6 +223,196 @@ nav
         transform: translateX(-15rem)
         img
             width: 100%
+
+/* ---------------------------------------------- Volunteer ------------------------------------------------- */
+
+.volunteer
+    margin-top: 14rem
+    h1
+        font-size: 3rem
+        color: #737373
+        text-align: center
+    #volunteer-form
+        label,input,textarea
+            display: block
+            margin: 0 auto
+            width: 50%
+        label
+            font-size: 1.2rem
+            color: $black
+            margin-bottom: 0.5rem
+        input, textarea
+            border: none
+            background: $lightyellow
+            padding: 1rem
+            border-radius: 5px
+            margin-bottom: 2rem
+        button
+            border: none
+            @include yellowOrangeGradient()
+            @include shadow1()
+            color: white
+            padding: 1rem 3rem
+            font-size: 1.2rem
+            letter-spacing: 0.1rem
+            border-radius: 50px
+            cursor: pointer            
+            margin: 0 auto
+            display: block
+            margin-top: 1rem
+            &:hover
+                background: rgba(255,173,122,1)
+                transform: translateY(1px)
+
+/* ---------------------------------------------- Events ------------------------------------------------- */
+
+.events
+    margin-top: 14rem
+    padding: 0 20%
+    position: relative
+    h1
+        font-size: 3rem
+        color: $orange
+        text-align: right
+    .left-section
+        img
+            width: 100%
+    .right-section
+        display: flex
+        flex-wrap: wrap
+        align-items: flex-start
+        justify-content: space-between
+        img
+            width: 49%
+            margin: 0.7rem 0
+    .background
+        position: absolute
+        z-index: -10
+        top: 0
+        width: 100%
+        transform: translateX(-25rem)
+        img
+            width: 120%
+
+/* ---------------------------------------------- Testimonials ------------------------------------------------- */
+
+.testimonials
+    padding: 0 25%
+    position: relative
+    margin-top: 10rem
+    .card-wrapper
+        position: relative
+        .card
+            background: white
+            @include shadow1()
+            display: flex
+            padding: 2rem
+            margin-bottom: 2rem
+            .pic
+                width: 20%
+                text-align: center
+                .round
+                    width: 50px
+                    height: 50px
+                    border-radius: 50%
+                    background: #fabd9a
+                    display: block
+                    margin: 0 auto
+                    &.pink
+                        background: #f6aecd
+                h4
+                    font-weight: 500
+                    color: $black
+            .text
+                width: 80%
+                font-size: 1.2rem
+                color: $black
+        .background
+            img
+                position: absolute
+                z-index: -10
+                &.start-quote
+                    top: -5rem
+                    left: -5rem
+                &.end-quote
+                    bottom: -5rem
+                    right: -5rem
+
+/* ---------------------------------------------- Register ------------------------------------------------- */
+
+.register
+    margin-top: 14rem
+    padding: 2% 20%
+    background: $yellow
+    h1
+        font-size: 3rem
+        color: $orange
+    #registration-form
+        label,input,textarea
+            display: block
+            margin: 0 auto
+            width: 100%
+        label
+            font-size: 1.2rem
+            color: $black
+            margin-bottom: 0.5rem
+        input, textarea
+            border: none
+            background: $lightyellow
+            padding: 1rem
+            border-radius: 5px
+            margin-bottom: 2rem
+        button
+            border: none
+            @include orangeGradient()
+            @include shadow1()
+            color: white
+            padding: 1rem 3rem
+            font-size: 1.2rem
+            letter-spacing: 0.1rem
+            border-radius: 50px
+            cursor: pointer            
+            margin: 0 auto
+            display: block
+            margin-top: 1rem
+            &:hover
+                background: rgba(255,173,122,1)
+                transform: translateY(1px)
+
+
+
+/* ---------------------------------------------- Media queries ------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------- */
+                
+@media (max-width: 1373px)
+    .hero
+        .hero-content
+            h1
+                font-size: 4rem
+            h2
+                font-size: 1.7rem
+            .register-btn
+                padding: 1rem 2rem
+
+@media (max-width: 1262px)
+    nav
+        .nav-container
+            .left-nav, .right-nav
+                a
+                    padding: 1rem
+    .hero
+        .hero-content
+            h1
+                font-size: 3rem
+            h2
+                font-size: 1.4rem
+            .register-btn
+                padding: 1rem 2rem
+                font-size: 1.2rem
+                
+
+
+        
 
                 
 
