@@ -141,6 +141,11 @@ nav .nav-container .right-nav {
           transform: translateY(1px);
 }
 
+.hero .hero-content .register-btn a {
+  color: white;
+  text-decoration: none;
+}
+
 .hero .photo-frames {
   width: 55%;
   position: relative;

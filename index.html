@@ -16,17 +16,17 @@
 		<nav>
 			<div class="nav-container">
 				<div class="left-nav">
-					<a href="#">HOME</a>
-					<a href="">SURPRISES & EXPERIENCES</a>
-					<a href="#">HOW WE WORK</a>
+					<a href="#home" class="nav">HOME</a>
+					<a href="#surprises" class="nav">SURPRISES & EXPERIENCES</a>
+					<a href="#howwework" class="nav">HOW WE WORK</a>
 				</div>
 				<div class="logo">
 					<img src="images/logo.png" alt="logo">
 				</div>
 				<div class="right-nav">
-					<a href="#">BE A VOLUNTEER</a>
-					<a href="#">EVENTS</a>
-					<a href="#">ABOUT US</a>
+					<a href="#volunteer" class="nav">BE A VOLUNTEER</a>
+					<a href="#events" class="nav">EVENTS</a>
+					<a href="#aboutus" class="nav">ABOUT US</a>
 				</div>
 			</div>
 			
@@ -46,7 +46,7 @@
 			<div class="hero-content">
 				<h1>SMILE MAKERS</h1>
 				<h2>We bestow our customers with breathtaking surpises and experiences worth remembering</h2>
-				<button class="register-btn">Register for surprise</button>
+				<button class="register-btn"><a href="#register" class="nav">Register for surprise</a></button>
 			</div>
 			<div class="photo-frames">
 				<img id="photo1" src="images/photo-1.png" alt="photo frame">
@@ -76,7 +76,7 @@
 		</div>
 	</section>
 
-	<section class="how-we-work">
+	<section class="how-we-work" id="howwework">
 		<div class="background">
 			<img src="images/background-graphics2.png" alt="background graphics">
 		</div>
@@ -154,7 +154,7 @@
 		</div>
 	</section>
 
-	<section class="volunteer">
+	<section class="volunteer" id="volunteer">
 		<h1>VOLUNTEER WITH US</h1>
 		<form action="" id="volunteer-form">
 			<label for="volunteer-name">Name</label>
@@ -169,7 +169,7 @@
 		</form>
 	</section>
 
-	<section class="events">
+	<section class="events" id="events">
 		<div class="background">
 			<img src="images/background-graphics3.png" alt="background graphics">
 		</div>
@@ -217,7 +217,7 @@
 		</div>
 	</section>
 
-	<section class="register">
+	<section class="register" id="register">
 		<h1>REGISTER FOR SURPRISE</h1>
 		<form action="" id="registration-form">
 			<label for="register-name">Name</label>
@@ -233,6 +233,9 @@
 			<button>Register</button>
 		</form>
 	</section>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 
 </body>
 </html>
