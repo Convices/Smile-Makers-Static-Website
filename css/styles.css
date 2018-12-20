@@ -512,6 +512,61 @@ nav .nav-container .right-nav {
           transform: translateY(1px);
 }
 
+/* ---------------------------------------------- Contact ------------------------------------------------- */
+.contact {
+  background: #494949;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 5%;
+  text-align: right;
+}
+
+.contact .left-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .left-section img {
+  width: 2rem;
+}
+
+.contact .left-section a {
+  color: white;
+  margin-left: 1rem;
+}
+
+.contact .right-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .right-section h3 {
+  color: white;
+  font-size: 1.2rem;
+  margin-right: 2rem;
+}
+
+.contact .right-section h4 {
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
 /* ---------------------------------------------- Media queries ------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------------------------- */
 @media (max-width: 1373px) {
