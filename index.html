@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16">
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 	<section class="home" id="home">
@@ -156,17 +157,24 @@
 
 	<section class="volunteer" id="volunteer">
 		<h1>VOLUNTEER WITH US</h1>
-		<form action="" id="volunteer-form">
+		<form method="post" action="https://htycoons.in/enquiry/9636OLOIK52659899282/volunteer"  id="volunteer-form" name="volunteer-form">
 			<label for="volunteer-name">Name</label>
-			<input type="text" id="volunteer-name">
+			<input name='name' id="name" type="text" id="volunteer-name">
 			<label for="volunteer-mail">Mail id</label>
-			<input type="text" id="volunteer-mail">
+			<input name='email' id='email' type="email" id="volunteer-mail">
 			<label for="volunteer-phone">Mobile no.</label>
-			<input type="text" id="volunteer-phone">
-			<label for="volunteer-description">Description</label>
-			<textarea rows ="5" type="text" id="volunteer-description"></textarea>
-			<button>Send</button>
+			<input name='mob' id='mob' type="text" id="volunteer-phone">
+			<label  for="volunteer-description">Description</label>
+			<textarea name='description' id='description' rows ="5" type="text" id="volunteer-description"></textarea>
+			<button >Send</button>
 		</form>
+
+		<div style="text-align:center" class="card-wrapper " id="volunteer-succss">
+
+			<p class="text-success">REGISTRATION SUCCESSFULLY COMPLEATED  OUR TEAM WILL CONTACT YOU SOON</p>
+		
+		</div>
+
 	</section>
 
 	<section class="events" id="events">
@@ -219,17 +227,18 @@
 
 	<section class="register" id="register">
 		<h1>REGISTER FOR SURPRISE</h1>
-		<form action="" id="registration-form">
+		<p id="regMessage">Registration Success</p>
+		<form action="https://htycoons.in/enquiry/9636OLOIK52659899282/register" method="post" id="registration-form">
 			<label for="register-name">Name</label>
-			<input type="text" id="register-name">
+			<input name="name" type="text" id="register-name">
 			<label for="register-phone">Mobile no.</label>
-			<input type="text" id="register-phone">
+			<input type="text" name="mob"  id="register-phone">
 			<label for="register-occasion">Occasion</label>
-			<input type="text" id="register-occasion">
+			<input type="text" name="occasion" id="register-occasion">
 			<label for="register-date">Date</label>
-			<input type="text" id="register-date">
+			<input type="date" name="date"  id="register-date">
 			<label for="register-description">Description</label>
-			<textarea rows ="5" type="text" id="register-description"></textarea>
+			<textarea rows ="5" type="text" name="description" id="register-description"></textarea>
 			<button>Register</button>
 		</form>
 	</section>
@@ -245,9 +254,69 @@
 			<h4>Nikhil Kilivayil<br>+919995471353</h4>
 		</div>
 	</section>
+<script>
+$('#volunteer-succss').css({"visibility":"hidden"});
+$('#regMessage').css({"visibility":"hidden"});
+var frm = $('#volunteer-form');
+var frmReg = $('#registration-form');
+
+    frm.submit(function (e) {
+
+        e.preventDefault();
+
+        $.ajax({
+            type: frm.attr('method'),
+            url: frm.attr('action'),
+            data: frm.serialize(),
+            success: function (data) {
+                //console.log('Submission was successful.');
+                // console.log(data);
+		clear();
+$('#volunteer-succss').css({"visibility":"visible"});
+            },
+            error: function (data) {
+                // console.log('An error occurred.');
+                // console.log(data);
+            },
+        });
+    });
+frmReg.submit(function (e) {
+
+        e.preventDefault();
+
+        $.ajax({
+            type: frmReg.attr('method'),
+            url: frmReg.attr('action'),
+            data: frmReg.serialize(),
+            success: function (data) {
+                //console.log('Submission was successful.');
+                // console.log(data);
+		regClear();
+$('#regMessage').css({"visibility":"visible"});
+            },
+            error: function (data) {
+                // console.log('An error occurred.');
+                // console.log(data);
+            },
+        });
+    });
+
+    function clear(){
+	document.getElementById( "name" ).value="";
+	document.getElementById( "email" ).value="";
+	document.getElementById( "mob" ).value="";
+	document.getElementById( "description" ).value="";
+    }
+	function regClear(){
+	document.getElementById( "register-name" ).value="";
+	document.getElementById( "register-phone" ).value="";
+	document.getElementById( "register-occasion" ).value="";
+	document.getElementById( "register-description" ).value="";
+    }
+   
+</script>
 
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
-
 </body>
 </html>
